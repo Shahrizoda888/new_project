@@ -16,7 +16,7 @@
 </head>
 <body>
     
-    <nav class="navbar is-fixed-top " style="margin-right: 100px;">
+    <nav class="navbar" style="margin-right: 100px;">
         <div class="navbar-brand">
             
     
@@ -49,7 +49,7 @@
         <div class="container">
             <div class="columns">
                 <div class="column">
-<h1 class="title has-text-dark" style="width: 506px;
+<h1 class="title has-text-dark has-text-centered-mobile; is-size-6-mobile" style="width: 506px;
 height: 105px;
 left: 148px;
 top: 228px;
@@ -58,9 +58,10 @@ font-family: Heebo;
 font-style: normal;
 font-weight: bold;
 font-size: 44px;
-line-height: 60px;"> <strong>Hi, I am John, <br>
+line-height: 60px;
+"> <strong>Hi, I am John, <br>
     Creative Technologist</strong> </h1>
-    <p class="p" style="width: 497px;
+    <p class="p is-size-6-mobile has-text-centered-mobile" style="width: 497px;
     height: 66px;
     left: 148px;
     top: 373px;
@@ -70,14 +71,15 @@ line-height: 60px;"> <strong>Hi, I am John, <br>
     font-weight: normal;
     font-size: 16px;
     line-height: 23px;
-    color: #21243D;">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet <br> sint. Velit officia consequat duis enim velit mollit. Exercitation veniam <br> consequat sunt nostrud amet.</p>
+    color: #21243D;
+    ">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet <br> sint. Velit officia consequat duis enim velit mollit. Exercitation veniam <br> consequat sunt nostrud amet.</p>
                 
 <br>
                 <button class="button has-background-danger has-text-white">Download Resume</button>
             </div>
 
                 <div class="column">
-<img src="odam.jpg" alt="" style="
+<img class="odam" src="odam.jpg" alt="" style="
 width: 243px;
 height: 243px;
 left: 760px;
@@ -307,6 +309,53 @@ top: 100px;">
         </div>
         <br>
               <p class="has-text-dark" style="display: flex; justify-content: center;"> <strong>Copyright &copy; 2021, All Rights Reserved </strong> </p>
-    </footer>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <script>
+                document.addEventListener('DOMContentLoaded', () => {
+          
+          // Get all "navbar-burger" elements
+          const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+          
+          // Check if there are any navbar burgers
+          if ($navbarBurgers.length > 0) {
+          
+            // Add a click event on each of them
+            $navbarBurgers.forEach( el => {
+              el.addEventListener('click', () => {
+          
+                // Get the target from the "data-target" attribute
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+          
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+          
+              });
+            });
+          }
+          
+          });
+              </script>
+    
+    
+    
+            </footer>
+
+
+   
 </body>
 </html>
